@@ -44,35 +44,60 @@
 		  <TextView android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:textColor="#372c24"
-		  		android:text="Full Name"/>
-		  <EditText android:id="@+id/reg_fullname" 
+		  		android:text="Username"/>
+		  <EditText android:id="@+id/usrnameRegPg" 
 		  		android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:layout_marginTop="5dip"
 		  		android:singleLine="true"
 		  		android:layout_marginBottom="20dip"/>
+		  
+		  		 
+		  
 		  <!--  Email Label -->
 		  <TextView android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:textColor="#372c24"
 		  		android:text="Email"/>
-		  <EditText android:id="@+id/reg_email" 
+		  <EditText android:id="@+id/emailRegPg" 
 		  		android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:layout_marginTop="5dip"
 		  		android:singleLine="true"
 		  		android:layout_marginBottom="20dip"/>
+		  
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#372c24"
+		  		android:text="Phone"/>
+		  <EditText android:id="@+id/phone" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:singleLine="true"
+		  		android:layout_marginBottom="20dip"/>
+		  
 		  <!-- Password Label -->
 		  <TextView android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:textColor="#372c24"
 		  		android:text="Password"/>
-		  <EditText android:id="@+id/reg_password" 
+		  <EditText android:id="@+id/passwordRegPg" 
 		        android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:password="true"
 		  		android:singleLine="true"
 		  		android:layout_marginTop="5dip"/>
+		  
+		   <ProgressBar
+                android:id="@+id/progressBarRegPg"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+		  
 		  <!-- Register Button -->		
 		  <Button android:id="@+id/btnRegister" 
 		  		android:layout_width="fill_parent"
@@ -89,6 +114,8 @@
 		  		android:gravity="center"
 		  		android:textSize="20dip"
 		  		android:textColor="#2f44e1"/>
+		  
+	
 		    
 		</LinearLayout>
   		<!-- Registration Form Ends -->
