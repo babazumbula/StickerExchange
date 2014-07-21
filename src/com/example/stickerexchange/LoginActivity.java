@@ -121,8 +121,11 @@ public class LoginActivity extends Activity {
     
     class HttpBackgorundRequest extends AsyncTask<String, String, String>{
 
+    	TextView serverResponse;
     	String username = inputUsername.getText().toString();
 		String password = inputPassword.getText().toString();
+		String jsonMessage;
+		String jsonError;
 		
 		@Override
 		protected void onPreExecute() {
@@ -139,6 +142,13 @@ public class LoginActivity extends Activity {
 			
 			UserFunctions userFunction = new UserFunctions();
 			JSONObject json = userFunction.loginUser(username, password);
+			try {
+				jsonMessage = json.getString("message");
+				jsonError = json.getString("error");
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			return null;
 		}
     	
@@ -147,10 +157,10 @@ public class LoginActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onPostExecute(result);
 		
-		
+		serverResponse = (TextView) findViewById(R.id.serverResponse);
 		pb.setVisibility(View.INVISIBLE);
 		btnLogin.setVisibility(View.VISIBLE);
-		
+		serverResponse.setText(jsonMessage);
 
 		}
     }

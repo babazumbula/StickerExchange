@@ -21,9 +21,11 @@
   							android:layout_height="wrap_content"
   							
   							/>
+  			
   				<!-- Logo Ends -->
   		</LinearLayout>
   		<!--  Header Ends -->  
+  		
   		<!-- Footer Start -->
   		<LinearLayout android:id="@+id/footer"
   				android:layout_width="fill_parent"
@@ -42,6 +44,8 @@
 		  android:padding="10dip"
 		  android:layout_below="@id/header">
   			
+
+		    
 		    <ProgressBar
                 android:id="@+id/progressBar"
                 style="?android:attr/progressBarStyleLarge"
@@ -50,6 +54,13 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true" />	
+                
+		    <TextView 
+  		    	android:layout_width="fill_parent"
+		        android:id="@+id/serverResponse"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#ff0000"
+		  		/>
 		    
 		  <!--  Username Label -->
 		  <TextView android:layout_width="fill_parent"
