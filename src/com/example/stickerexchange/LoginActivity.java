@@ -57,9 +57,6 @@ public class LoginActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				
-				
-				
-				Log.d("Button", "Login");
 				new HttpBackgorundRequest().execute();
 				
 		/*		
@@ -160,7 +157,7 @@ public class LoginActivity extends Activity {
 		serverResponse = (TextView) findViewById(R.id.serverResponse);
 		pb.setVisibility(View.INVISIBLE);
 		btnLogin.setVisibility(View.VISIBLE);
-		serverResponse.setText(jsonMessage);
+		serverResponse.setText(jsonError);
 
 		}
     }
