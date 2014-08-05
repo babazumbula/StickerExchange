@@ -24,7 +24,9 @@
         </activity>
         <activity android:name=".RegisterActivity"
                   android:label="Register New Account">
-            
+        </activity>
+        <activity android:name=".Exchange"
+                  android:label="Say What You Need or Give">
         </activity>
     </application>
 	<uses-permission android:name="android.permission.INTERNET" />

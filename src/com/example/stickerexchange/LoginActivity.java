@@ -3,10 +3,6 @@ package com.example.stickerexchange;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
-
-
-
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.content.Intent;
@@ -123,6 +119,8 @@ public class LoginActivity extends Activity {
 		String password = inputPassword.getText().toString();
 		String jsonMessage;
 		String jsonError;
+		String jsonPhone;
+		String jsonEmail;
 		
 		@Override
 		protected void onPreExecute() {
@@ -140,7 +138,7 @@ public class LoginActivity extends Activity {
 			UserFunctions userFunction = new UserFunctions();
 			JSONObject json = userFunction.loginUser(username, password);
 			try {
-				jsonMessage = json.getString("message");
+		//		jsonMessage = json.getString("message");
 				jsonError = json.getString("error");
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
@@ -157,8 +155,15 @@ public class LoginActivity extends Activity {
 		serverResponse = (TextView) findViewById(R.id.serverResponse);
 		pb.setVisibility(View.INVISIBLE);
 		btnLogin.setVisibility(View.VISIBLE);
+		
+		if(jsonError.equals("true")){
+			
+		}else{
+			Intent i = new Intent(LoginActivity.this, Exchange.class);
+			startActivity(i); 
+		}
 		serverResponse.setText(jsonError);
-
+		
 		}
     }
     
