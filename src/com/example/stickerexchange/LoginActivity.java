@@ -55,39 +55,6 @@ public class LoginActivity extends Activity {
 				
 				new HttpBackgorundRequest().execute();
 				
-		/*		
-				try {
-					if (json.getString(KEY_SUCCESS) != null) {
-						loginErrorMsg.setText("");
-						String res = json.getString(KEY_SUCCESS); 
-						if(Integer.parseInt(res) == 1){
-							// user successfully logged in
-							// Store user details in SQLite Database
-							DatabaseHandler db = new DatabaseHandler(getApplicationContext());
-							JSONObject json_user = json.getJSONObject("user");
-							
-							// Clear all previous data in database
-							userFunction.logoutUser(getApplicationContext());
-							db.addUser(json_user.getString(KEY_NAME), json_user.getString(KEY_EMAIL), json.getString(KEY_UID), json_user.getString(KEY_CREATED_AT));						
-							
-							// Launch Dashboard Screen
-							Intent dashboard = new Intent(getApplicationContext(), DashboardActivity.class);
-							
-							// Close all views before launching Dashboard
-							dashboard.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-							startActivity(dashboard);
-							
-							// Close Login Screen
-							finish();
-						}else{
-							// Error in login
-							loginErrorMsg.setText("Incorrect username/password");
-						}
-					}
-				} catch (JSONException e) {
-					e.printStackTrace();
-				}
-*/
 			}
 		});
     }
