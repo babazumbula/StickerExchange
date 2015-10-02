@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#fff000"
+	        android:gravity="center"
+	        android:text="Sticker 1"
+	        android:textColor="#372c24"
+	        android:textSize="20dp" />
+	
+	    <RadioGroup
+	        android:id="@+id/st_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#fff000"
+	        android:checkedButton="@+id/st_1_none"
+	        android:orientation="horizontal" >
+	
+	        <RadioButton
+	            android:id="@+id/st_1_needed"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Needed" />
+	
+	        <RadioButton
+	            android:id="@+id/st_1_canGive"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Can Give" />
+	
+	        <RadioButton
+	            android:id="@+id/st_1_none"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="None" />
+	    </RadioGroup>
+	
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Sticker 2"
+	        android:textColor="#372c24"
+	        android:textSize="20dp" />
+	
+	    <RadioGroup
+	        android:id="@+id/st_2"
+	        android:checkedButton="@+id/st_2_none"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <RadioButton
+	            android:id="@+id/st_2_needed"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Needed" />
+	
+	        <RadioButton
+	            android:id="@+id/st_2_canGive"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Can Give" />
+	
+	        <RadioButton
+	            android:id="@+id/st_2_none"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="None" />
+	    </RadioGroup>
+	
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#fff000"
+	        android:gravity="center"
+	        android:text="Sticker 3"
+	        android:textColor="#372c24"
+	        android:textSize="20dp" />
+	
+	    <RadioGroup
+	        android:id="@+id/st_3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#fff000"
+	        android:checkedButton="@+id/st_3_none"
+	        android:orientation="horizontal" >
+	
+	        <RadioButton
+	            android:id="@+id/st_3_needed"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Needed" />
+	
+	        <RadioButton
+	            android:id="@+id/st_3_canGive"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Can Give" />
+	
+	        <RadioButton
+	            android:id="@+id/st_3_none"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="None" />
+	    </RadioGroup>
+	
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Sticker 4"
+	        android:textColor="#372c24"
+	        android:textSize="20dp" />
+	
+	    <RadioGroup
+	        android:id="@+id/st_4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:checkedButton="@+id/st_4_none"
+	        android:orientation="horizontal" >
+	
+	        <RadioButton
+	            android:id="@+id/st_4_needed"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Needed" />
+	
+	        <RadioButton
+	            android:id="@+id/st_4_canGive"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="Can Give" />
+	
+	        <RadioButton
+	            android:id="@+id/st_4_none"
+	            android:layout_weight="1"
+	            android:button="@null"
+	            android:drawableBottom="@android:drawable/btn_radio"
+	            android:gravity="center"
+	            android:text="None" />
+	    </RadioGroup>
+	    
+	    
+	   
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="bottom"
+			android:layout_alignParentBottom="true"
+			android:orientation="horizontal" >
+			
+			<Button
+			android:id="@+id/btn_next"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_alignParentBottom="true"
+			android:text="Next" />
+
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
+	    
+ 
