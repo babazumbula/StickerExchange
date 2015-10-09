@@ -44,3 +44,4 @@ app/build/intermediates/res/merged/debug/layout/exchange.xml
 app/build/intermediates/res/resources-debug.ap_
 app/build/outputs/apk/app-debug.apk
 local.properties
+.idea/workspace.xml
