@@ -24,7 +24,7 @@ public class LoginActivity extends Activity {
 	EditText inputPassword;
 	Button   btnLogin;
 	ProgressBar pb;
-	
+    public static GlobalVariables globalVariables;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,8 @@ public class LoginActivity extends Activity {
         inputUsername = (EditText) findViewById(R.id.usrname);
         inputPassword = (EditText) findViewById(R.id.pass);
         pb = (ProgressBar) findViewById(R.id.progressBar);
-        
+
+        globalVariables = new GlobalVariables();
         // Listening to register new account link
         registerScreen.setOnClickListener(new View.OnClickListener() {
  
@@ -107,6 +108,7 @@ public class LoginActivity extends Activity {
 			json = userFunction.loginUser(username, password);
 			try {
 				jsonError = json.getString("error");
+                globalVariables.setUserID(json.getString("id"));
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -133,7 +135,7 @@ public class LoginActivity extends Activity {
 		if( jsonError.equals("true")){
 			serverResponse.setText(jsonMessage);
 		}else{
-			Intent i = new Intent(LoginActivity.this, Exchange.class);
+			Intent i = new Intent(LoginActivity.this, UserList.class);
 			startActivity(i); 
 		}
 

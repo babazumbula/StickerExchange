@@ -2,4 +2,6 @@
 <resources>
     <string name="hello">Hello World, LoginActivity!</string>
     <string name="app_name">Sticker Exchange</string>
+    <string name="edit">Edit exchange ability</string>
+    <string name="noRecordsTxt">Say what you can give and what do you need!</string>
 </resources>

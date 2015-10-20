@@ -21,7 +21,8 @@ public class UserFunctions {
 	
 	private static String login_tag = "login";
 	private static String register_tag = "register";
-	
+
+    String globalVariables = GlobalVariables.getUserID();
 	// constructor
 	public UserFunctions(){
 		jsonParser = new JSONParser();
@@ -63,6 +64,8 @@ public class UserFunctions {
 
 	public void updateExchangeResources(ArrayList<String>[] sticker){
 
+
+
         String selectedID1,selectedID2,selectedID3,selectedID4,selectedID5,selectedID6,selectedID7,selectedID8 = null;
 		final ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
 
@@ -76,6 +79,7 @@ public class UserFunctions {
 			selectedID7 = selection.get(6).toString();
 			selectedID8 = selection.get(7).toString();
 
+            params.add(new BasicNameValuePair("userID", globalVariables));
 			params.add(new BasicNameValuePair("selectedID1", selectedID1));
 			params.add(new BasicNameValuePair("selectedID2", selectedID2));
 			params.add(new BasicNameValuePair("selectedID3", selectedID3));

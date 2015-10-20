@@ -140,7 +140,9 @@
     <!-- From: file:/C:/androidProjects/StickerExchange/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Sticker Exchange</string>
+    <string name="edit">Edit exchange ability</string>
     <string name="hello">Hello World, LoginActivity!</string>
+    <string name="noRecordsTxt">Say what you can give and what do you need!</string>
     <!-- From: file:/C:/androidProjects/StickerExchange/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">

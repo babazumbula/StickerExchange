@@ -28,6 +28,10 @@
         <activity android:name=".Exchange"
                   android:label="Say What You Need or Give">
         </activity>
+        <activity android:name=".UserList"
+                  android:label="Users waiting for exchange">
+        </activity>
+
     </application>
 	<uses-permission android:name="android.permission.INTERNET" />
 </manifest>
